@@ -1,0 +1,62 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center; /* 수평 중앙 정렬 */
+  align-items: center; /* 수직 중앙 정렬 */
+  height: 100vh; /* 전체 화면 높이 */
+  margin: 0; /* 기본 여백 제거 */
+  background-color: #f0f0f0; /* 배경색 설정 */
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #333; /* 테두리 추가 */
+  border-radius: 10px; /* 모서리 둥글게 */
+  padding: 20px; /* 내부 여백 */
+  background-color: white; /* 배경색 설정 */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* 그림자 효과 */
+}
+
+.board-row {
+  display: flex;
+}
+
+.square {
+  width: 60px;
+  height: 60px;
+  font-size: 24px;
+  margin: 5px;
+  cursor: pointer;
+  background-color: #e0e0e0; /* 버튼 배경색 */
+  border: none; /* 기본 테두리 제거 */
+  border-radius: 5px; /* 모서리 둥글게 */
+  transition: background-color 0.3s; /* 배경색 전환 효과 */
+}
+
+.square:hover {
+  background-color: #d0d0d0; /* 마우스 오버 시 배경색 변경 */
+}
+
+.status {
+  margin-bottom: 10px; /* 상태 메시지와 보드 간의 여백 */
+  font-size: 20px; /* 상태 메시지 크기 */
+}
+
+/* 다시하기 버튼 스타일 */
+.reset-button {
+  margin-top: 20px; /* 버튼과 게임 보드 간의 여백 */
+  padding: 10px 20px; /* 버튼 내부 여백 */
+  font-size: 16px; /* 버튼 글자 크기 */
+  color: white; /* 글자 색상 */
+  background-color: #007bff; /* 버튼 배경색 */
+  border: none; /* 기본 테두리 제거 */
+  border-radius: 5px; /* 모서리 둥글게 */
+  cursor: pointer; /* 커서 모양 변경 */
+  transition: background-color 0.3s; /* 배경색 전환 효과 */
+}
+
+.reset-button:hover {
+  background-color: #0056b3; /* 마우스 오버 시 배경색 변경 */
+} 
